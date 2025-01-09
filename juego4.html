@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Torre de Bloques</title>
+  <link rel="stylesheet" href="./juego4.css">
+<!-- Botón Volver al inicio -->
+<a href="file:///C:/Users/08-12/Documents/proyecto/proyeto.html" class="btn btn-rounded" id="restart">Volver al inicio</a>
+
+<style>
+    /* Estilo para el botón "Volver al inicio" */
+    #restart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Ancho del círculo */
+        height: 50px; /* Alto del círculo */
+        border-radius: 50%; /* Hacerlo circular */
+        background-color: #4CAF50; /* Color de fondo */
+        color: white; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        font-size: 12px; /* Tamaño de fuente */
+        position: fixed; /* Posición fija */
+        bottom: 20px; /* Distancia desde la parte inferior */
+        right: 20px; /* Distancia desde la parte derecha */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    }
+
+    #restart:hover {
+        background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    }
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<meta name="viewport" content="width=device-width,user-scalable=no">
+
+<div id="container">
+  <div id="game"></div>
+  <div id="score">0</div>
+  <div id="instructions">Has clic para iniciar</div>
+  <div class="game-over">
+    <h2>Game Over</h2>
+    <p>Haz clic para empezar de nuevo</p>
+  </div>
+  <div class="game-ready">
+    <div id="start-button">Start</div>
+    <div></div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://codepen.io/ste-vg/pen/zBVaZw.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script><script  src="./juego4.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - HTML5 Pacman</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Permanent+Marker'><link rel="stylesheet" href="./juego3.css">
+  
+</head>
+<!-- Botón Volver al inicio -->
+<a href="file:///C:/Users/08-12/Documents/proyecto/proyeto.html" class="btn btn-rounded" id="restart">Volver al inicio</a>
+
+<style>
+    /* Estilo para el botón "Volver al inicio" */
+    #restart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Ancho del círculo */
+        height: 50px; /* Alto del círculo */
+        border-radius: 50%; /* Hacerlo circular */
+        background-color: #4CAF50; /* Color de fondo */
+        color: white; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        font-size: 12px; /* Tamaño de fuente */
+        position: fixed; /* Posición fija */
+        bottom: 20px; /* Distancia desde la parte inferior */
+        right: 20px; /* Distancia desde la parte derecha */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    }
+
+    #restart:hover {
+        background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    }
+</style>
+<body>
+<!-- partial:index.partial.html -->
+<div id="shim">shim for font face</div>
+
+<h1>HTML5 Pacman</h1>
+
+<p><a href="" target="_blank"></a></p>
+
+<div id="pacman"></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./juego3.js"></script>
+
+</body>
+</html>

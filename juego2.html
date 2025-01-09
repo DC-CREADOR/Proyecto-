@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Flappy Dino</title>
+  <link rel="stylesheet" href="./juego2.css">
+<!-- Botón Volver al inicio -->
+<a href="file:///C:/Users/08-12/Documents/proyecto/proyeto.html" class="btn btn-rounded" id="restart">Volver al inicio</a>
+
+<style>
+    /* Estilo para el botón "Volver al inicio" */
+    #restart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Ancho del círculo */
+        height: 50px; /* Alto del círculo */
+        border-radius: 50%; /* Hacerlo circular */
+        background-color: #4CAF50; /* Color de fondo */
+        color: white; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        font-size: 12px; /* Tamaño de fuente */
+        position: fixed; /* Posición fija */
+        bottom: 20px; /* Distancia desde la parte inferior */
+        right: 20px; /* Distancia desde la parte derecha */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    }
+
+    #restart:hover {
+        background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    }
+</style>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="ctn">
+  <canvas id="c" width="360px" height="640px"></canvas>
+  <div id="scoreboard">0</div>
+  <div id="start-screen">
+    <div id="ctrl-ctn">
+      <div id="up" class="ctrl-btn">↑</div>
+      <div id="space" class="ctrl-btn">SPACE</div>
+    </div>
+  </div>
+  <div id="gameover-screen">
+    <div id="gameover">GAME OVER</div>
+    <div id="replay">REPLAY</div>
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./juego2.js"></script>
+
+</body>
+</html>

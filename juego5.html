@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Space Invaders</title>
+        <link rel="stylesheet" href="juego5.css">
+        <script src="juego5.js" defer></script>
+    </head>
+<!-- Botón Volver al inicio -->
+<a href="file:///C:/Users/08-12/Documents/proyecto/proyeto.html" class="btn btn-rounded" id="restart">Volver al inicio</a>
+
+<style>
+    /* Estilo para el botón "Volver al inicio" */
+    #restart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; /* Ancho del círculo */
+        height: 50px; /* Alto del círculo */
+        border-radius: 50%; /* Hacerlo circular */
+        background-color: #4CAF50; /* Color de fondo */
+        color: white; /* Color del texto */
+        text-decoration: none; /* Sin subrayado */
+        font-size: 12px; /* Tamaño de fuente */
+        position: fixed; /* Posición fija */
+        bottom: 20px; /* Distancia desde la parte inferior */
+        right: 20px; /* Distancia desde la parte derecha */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+        z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    }
+
+    #restart:hover {
+        background-color: #45a049; /* Color más oscuro al pasar el mouse */
+    }
+</style>
+    <body>
+        <h1>Space Invaders</h1>
+        <div id="scoreboard">
+            <span>Puntuación: <span id="current-score">0</span></span>
+            <span>Mejor Puntuación: <span id="high-score">0</span></span>
+        </div>
+        <canvas id="board"></canvas>
+        <button id="restart-btn" style="display: none;">Reiniciar Juego</button>
+    </body>
+</html>

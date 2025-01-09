@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong con Controles de Botones</title>
+    <link rel="stylesheet" href="./juego6.css">
+    <style>
+        /* Estilo para el botón "Volver al inicio" */
+        #restart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        #restart:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilo de la pantalla y botones */
+        html, body {
+            height: 100%;
+            background: black;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 640px;
+            max-height: 480px;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        canvas {
+            outline: 1px solid white;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .control-panel {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #winner {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="c" width="640" height="480" style="background:#000"></canvas>
+        <div id="winner"></div>
+        <div class="control-panel">
+            <div class="button-group">
+                <button id="left-up">▲</button>
+                <button id="left-down">▼</button>
+            </div>
+            <div class="button-group">
+                <button id="right-up">▲</button>
+                <button id="right-down">▼</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="file:///C:/Users/08-12/Documents/proyecto/proyeto.html" class="btn btn-rounded" id="restart">Volver al inicio</a>
+
+    <script src="./juego6.js"></script>
+</body>
+</html>
